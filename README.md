@@ -36,6 +36,8 @@ To use the application start by using the above commands to install and start bo
 
 - The application can switch between emotion and sentiment analyses by clicking the button at the top of the results.
 
+## Features
+
 ### Title
 
 The title displays:
