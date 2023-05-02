@@ -1,0 +1,23 @@
+.twitterHeader{
+display: flex;
+align-items: center;
+gap: 5px;
+
+    .positive{
+        background-color: #00FF00;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .negative{
+        background-color: #FF0000;
+        border-radius: 5px;
+        padding: 10px;
+    }
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

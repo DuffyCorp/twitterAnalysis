@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.env
+/.env
+
+__pycache__
+/__pycache__
+
+temp
+./temp
+
+./test
+test
+
+input
+./input
+
+backend/sentimentAnalysis2/model.h5
+./backend/sentimentAnalysis2/model.h5
+
+model.h5
+/model.h5
+
+model.w2v
+/model.w2v

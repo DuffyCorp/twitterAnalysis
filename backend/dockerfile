@@ -1,0 +1,15 @@
+FROM python:3.8
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1
+RUN pip install protobuf
+RUN yes | pip uninstall protobuf
+RUN pip install protobuf==3.19.4 
+COPY ./requirements.txt /app
+RUN pip install -r requirements.txt
+RUN python -m nltk.downloader stopwords
+RUN python -m spacy download en_core_web_sm
+run pip3 install "ipykernel==4.8.2"
+COPY . .
+EXPOSE 5000
+ENV FLASK_APP=app.py
+CMD ["flask", "run", "--no-reload", "--host", "0.0.0.0"]

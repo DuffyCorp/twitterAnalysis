@@ -1,0 +1,31 @@
+.userContainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    max-width: 100%;
+  }
+
+  .contentContainer {
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+}

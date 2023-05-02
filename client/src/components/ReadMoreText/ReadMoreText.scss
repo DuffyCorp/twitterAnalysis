@@ -1,0 +1,12 @@
+.hidden {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
+  .readButton{
+    color: #77C7F7;
+    cursor: pointer;
+    transition: all 1s;
+  }

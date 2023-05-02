@@ -1,0 +1,137 @@
+.navContainer{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+}
+
+.navBar{
+    padding: 0 20px;
+  min-height: 9vh;
+  background: #1DA1F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.Logo{
+    font-size: 25px;
+  color: white;
+}
+
+.Menu{
+    list-style: none;
+  display: flex;
+
+  li:nth-child(2) {
+    margin: 0px 20px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menuLink{
+    color: white;
+  text-decoration: none;
+
+}
+
+.navIcon{
+    background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.Line{
+    display: block;
+  border-radius: 50px;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #fff;
+  transition: width 0.4s ease-in-out;
+
+  :nth-child(2) {
+    width: "70%";
+  }
+}
+
+.LineOpen{
+    display: block;
+    border-radius: 50px;
+    width: 40%;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+    transition: width 0.4s ease-in-out;
+}
+
+.Overlay{
+    position: absolute;
+  height: 0;
+  width: 100%;
+  background: #1DA1F2;
+  transition: height 0.4s ease-in-out;
+  z-index: 999;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.OverlayOpen{
+    position: absolute;
+  height: 91vh;
+  width: 100%;
+  background: #1DA1F2;
+  transition: height 0.4s ease-in-out;
+  z-index: 999;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.OverlayMenu{
+    list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+
+  li {
+    opacity: 0;
+    font-size: 25px;
+    margin: 50px 0px;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  li:nth-child(2) {
+    margin: 50px 0px;
+  }
+}
+
+.OverlayMenuOpen{
+    list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+
+  li {
+    opacity: 1;
+    font-size: 25px;
+    margin: 50px 0px;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  li:nth-child(2) {
+    margin: 50px 0px;
+  }
+}
